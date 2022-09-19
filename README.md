@@ -35,7 +35,7 @@ conda install -c pytorch ignite
 pip install tensorboard,matplotlib,xmltodict,pyglm,imageio,lpips,opencv-python
 ```
 ## Demo
-Please download sample data [here]() and extract it to `data/`.
+Please download sample data [here](https://drive.google.com/file/d/1roNV8_sZxD11R0FwktTkyu_PL2Q7TrAA/view?usp=sharing) and extract it to `data/`.
 
 ### Evaluation 
 
