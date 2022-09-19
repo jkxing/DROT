@@ -49,6 +49,7 @@ python experiments/evaluation/optim.py [translation/rotation/...]
 ### Furniture Layout 
 
 We provide 12 scenes shown in paper and supplemental materials collected from [3D-FRONT](https://tianchi.aliyun.com/specials/promotion/alibaba-3d-scene-dataset) for furniture layout application. Please refer to experiments/furniture/*.json for detail settings.
+
 **Usage**
 ```
 python experiments/furniture/optim.py [1-12]
