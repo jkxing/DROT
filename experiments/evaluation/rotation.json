@@ -1,0 +1,21 @@
+{
+    "scene_file"        :   "data/scenes/buddha.xml",
+    "bbox"              :   1.0,
+    "testnums"          :   10,
+    "resolution"        :   [128,128],
+    "renderer"          :   {"light_power":1.0,"background":"black"},
+    "setting"           :   {"Niter":1000,"optimizer":"Adam","learning_rate" :0.02,"view_per_iter":1, "decay":0.999},
+    "method"            :   ["our","nvdiffrast","finetune"],
+    "matching"          :   {"matcher":"Sinkhorn","matching_interval":5,"matching_weight":1.0,"rgb_loss_weight":1.0},
+    "debug"             :   false,
+    "show"              :   true,
+    "view"              :   {"type":"perspective","num":6,"center":[0.0,0.0,0.0],"dist":5.0, "direction":"square","position":[[0.0,0.0,0.0]]},
+    "optimize_parameter":   [
+                            {"meshId":0,
+                            "init_model":"origin",
+                            "init_global_rotation":"random",
+                            "init_global_rotation_center":[0.0,0.0,0.0],
+                            "optim_global_rotation":true
+                            }
+                        ]
+}

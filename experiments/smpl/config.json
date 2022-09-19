@@ -1,0 +1,20 @@
+{
+    "scene_file"        :   "",
+    "bbox"              :   1.0,
+    "resolution"        :   [128,128],
+    "simple"            :   true,
+    "renderer"          :   {"light_power":1.0,"background":"black"},
+    "setting"           :   {"Niter":1000,"optimizer":"Adam","learning_rate" :0.02,"view_per_iter":4,"decay":0.999},
+    "method"            :   ["finetune","nvdiffrast","pytorch3d_sil_rgb","our","pytorch3d_rgb"],
+    "matching"          :   {"matcher":"Sinkhorn","matching_interval":5},
+    "view"              :   {
+                                "type":"perspective",
+                                "num":6 ,
+                                "direction":"square", 
+                                "dist":2.0, 
+                                "center":[0.0,0.0,0.0],
+                                "position":[[0.0,0.0,2.0]]
+                            },
+    "debug"             :   false,
+    "show"              :   true
+}

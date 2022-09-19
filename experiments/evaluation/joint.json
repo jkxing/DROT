@@ -1,0 +1,43 @@
+{
+    "scene_file"        :   "data/scenes/multi.xml",
+    "bbox"              :   1.0,
+    "resolution"        :   [128,128],
+    "testnums"          :   1,
+    "renderer"          :   {"light_power":1.0,"background":"black"},
+    "setting"           :   {"Niter":1000,"optimizer":"Adam","learning_rate" :0.02,"view_per_iter":1, "decay":0.998},
+    "method"            :   ["finetune","nvdiffrast","our"],
+    "matching"          :   {"matcher":"Sinkhorn","matching_interval":5,"matching_weight":1.0,"rgb_loss_weight":1.0},
+    "debug"             :   false,
+    "show"              :   true,
+    "view"              :   {"type":"perspective","num":1,"center":[0.0,0.5,0.0],"dist":8.0, "direction":"auto"},
+    "optimize_parameter":   [
+                            {"meshId":0,
+                            "init_model":"origin",
+                            "init_global_rotation":[0.0,0.0,3.14],
+                            "optim_global_rotation":true,
+                            "optim_global_translation": false
+                            },
+                            {"meshId":1,
+                            "init_model":"origin",
+                            "init_global_rotation":[0.0,0.0,0.0],
+                            "optim_texture_map":true
+                            },
+                            {"meshId":2,
+                            "init_model":"origin",
+                            "init_global_scale":[1.2,0.8,1.0],
+                            "optim_global_scale":true
+                            },
+                            {"meshId":3,
+                            "init_model":"origin",
+                            "init_global_translation":[4.0,0.0,0.0],
+                            "optim_global_translation":true,
+                            "optim_global_rotation": false
+                            },
+                            {"meshId":4,
+                            "init_model":"origin",
+                            "init_global_translation":[-4.0,0.0,0.0],
+                            "optim_global_translation":true,
+                            "optim_global_rotation": false
+                            }
+                        ]
+}

@@ -1,0 +1,25 @@
+{
+    "optim_scene_file"  :   "data/furniture/1/init",
+    "gt_scene_file"     :   "data/furniture/1/gt",
+    "bbox"              :   1.0,
+    "resolution"        :   [256,256],
+    "simple"            :   true,
+    "renderer"          :   {"light_power":0.5,"background":"data/furniture/1/gt/0_bg.png","shading":true},
+    "setting"           :   {"Niter":500,"optimizer":"Adam","learning_rate" :0.02,"view_per_iter":1,"decay":0.999},
+    "method"            :   ["finetune","nvdiffrast","pytorch3d_rgb","our","pytorch3d_sil_rgb"],
+    "laplacian_loss"    :   false,
+    "matching"          :   {"matcher":"Sinkhorn","matching_interval":5},
+    "debug"             :   false,
+    "show"              :   true,
+    "view"              :   {
+        "type":"perspective",
+        "num":1,
+        "direction":"manual", 
+        "dist":2.0, 
+        "fov":70.0,
+        "znear":0.1,
+        "zfar":1000.0,
+        "center":[0.0,0.0,0.0],
+        "position":[[0.0,0.0,2.0]]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "scene_file"        :   "data/scenes/kitty.xml",
+    "bbox"              :   1.0,
+    "resolution"        :   [128,128],
+    "simple"            :   true,
+    "renderer"          :   {"light_power":1.0,"background":"black"},
+    "setting"           :   {"Niter":1000,"optimizer":"Adam","learning_rate" :0.02,"view_per_iter":1, "decay":0.999},
+    "method"            :   ["finetune","nvdiffrast","our"],
+    "matching"          :   {"matcher":"Sinkhorn","matching_interval":5,"matching_weight":1.0,"rgb_loss_weight":1.0},
+    "debug"             :   false,
+    "show"              :   true,
+    "view"              :   {"type":"perspective","num":6,"center":[0.0,0.0,0.0],"dist":2.0, "direction":"square","position":[[0.0,0.0,-2.0]]},
+    "optimize_parameter":   [
+                            {"meshId":0,
+                            "init_model":"origin",
+                            "init_global_translation":"random",
+                            "optim_global_translation":true
+                            }
+                        ]
+}

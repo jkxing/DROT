@@ -1,0 +1,19 @@
+{
+    "scene_file"        :   "data/scenes/cornell.xml",
+    "bbox"              :   1.0,
+    "resolution"        :   [128,128],
+    "testnums"          :   10,
+    "renderer"          :   {"light_power":1.0,"background":"black"},
+    "setting"           :   {"Niter":1000,"optimizer":"Adam","learning_rate" :0.02,"view_per_iter":1, "decay":0.999},
+    "method"            :   ["finetune","nvdiffrast","our"],
+    "matching"          :   {"matcher":"Sinkhorn","matching_interval":5,"matching_weight":1.0,"rgb_loss_weight":1.0},
+    "debug"             :   false,
+    "show"              :   true,
+    "view"              :   {"type":"perspective","num":1,"center":[0.0,0.0,0.0],"dist":1.5, "direction":"manual", "position":[[0.0,0.0,-12.0]]},
+    "optimize_parameter"  :   [{
+                                    "view":"disturb",
+                                    "pos_range":10.0,
+                                    "center_range":3.0
+                                }
+                            ]
+}

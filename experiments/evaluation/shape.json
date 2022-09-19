@@ -1,0 +1,32 @@
+{
+    "scene_file"         :   "./data/scenes/2D.xml",
+    "bbox"              :   1.0,
+    "resolution"        :   [128,128],
+    "testnums"          :   1,
+    "renderer"          :   {"light_power":1.0,"background":"black","shading":false},
+    "setting"           :   {"Niter":1000,"optimizer":"Adam","learning_rate" :0.02,"view_per_iter":1, "decay":0.999},
+    "method"            :   ["finetune","nvdiffrast","our"],
+    "matching"          :   {"matcher":"Sinkhorn","matching_interval":5,"matching_weight":1.0,"rgb_loss_weight":1.0},
+    "debug"             :   false,
+    "show"              :   true,
+    "view"              :   {
+        "type":"perspective",
+        "num":1,
+        "direction":"auto", 
+        "dist":5.0, 
+        "fov":60.0,
+        "center":[0.0,0.0,0.0],
+        "position":[[0.0,0.0,2.0]]
+    },
+    "optimize_parameter":   [
+                            {"meshId":0,
+                            "init_model":"data/simple/target1.ply",
+                            "init_global_translation":[-3.0,-3.0,0.0],
+                            "optim_global_translation":false,
+                            "init_global_rotation":[0.0,0.0,0.0],
+                            "optim_global_rotation":false,
+                            "init_global_scale":[0.012,0.012,0.012],
+                            "optim_global_scale":false,
+                            "optim_vertex_position":true
+                            }]
+}
