@@ -1,5 +1,6 @@
 # DROT
-Code for SIGGRAPH ASIA 2022 paper *Differentiable Rendering using RGBXY Derivatives and Optimal Transport*
+Code for SIGGRAPH ASIA 2022 paper [*Differentiable Rendering using RGBXY Derivatives and Optimal Transport*](https://doi.org/10.1145/3550454.3555479)
+
 ## Installation
 
 Clone this repo first
@@ -39,6 +40,7 @@ Please download sample data [here]() and extract it to `data/`.
 ### Evaluation 
 
 We provide 8 scenes used in evaluation part. Please refer to experiments/evaluation/*.json for detail settings.
+
 **Usage**
 ```
 python experiments/evaluation/optim.py [translation/rotation/...]
