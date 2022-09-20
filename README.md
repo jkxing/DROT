@@ -34,12 +34,17 @@ Install other tools
 conda install -c pytorch ignite 
 pip install tensorboard,matplotlib,xmltodict,pyglm,imageio,lpips,opencv-python
 ```
+if some error occurs, the following tips may help:
+- GCC version should under 10
+- Install correct version of nvidia-gl driver(server version may fail)
+- CUDA version/Python-dev version should exactly match everywhere
+
 ## Demo
 Please download sample data [here](https://drive.google.com/file/d/1roNV8_sZxD11R0FwktTkyu_PL2Q7TrAA/view?usp=sharing) and extract it to `data/`.
 
 ### Evaluation 
 
-We provide 8 scenes used in evaluation part. Please refer to experiments/evaluation/*.json for detail settings.
+We provide all 8 scenes used in evaluation part. Please refer to experiments/evaluation/*.json for detail settings.
 
 **Usage**
 ```
