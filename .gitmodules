@@ -1,0 +1,3 @@
+[submodule "jittor"]
+	path = jittor
+	url = https://github.com/jkxing/jrender/
