@@ -1,5 +1,5 @@
 # DROT
-Code for SIGGRAPH ASIA 2022 paper [*Differentiable Rendering using RGBXY Derivatives and Optimal Transport*](https://doi.org/10.1145/3550454.3555479)
+Code for SIGGRAPH ASIA 2022 paper [*Differentiable Rendering using RGBXY Derivatives and Optimal Transport*](https://jkxing.github.io/academic/publication/DROT)
 
 ## Installation
 
@@ -21,7 +21,8 @@ Install customized PyTorch3D
 conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 conda install -c bottler nvidiacub
 git clone https://github.com/jkxing/pytorch3d
-pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
+cd pytorch3d
+python setup.py install
 ```
 Install Nvdiffrast
 ```
