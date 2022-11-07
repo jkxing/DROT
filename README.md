@@ -80,3 +80,5 @@ You can specify random seed for different initialization.
 Because the face model are not free for public, we do not provide the model and optimization code. But the code are similar to other applications, so you can implement it for your own model.
 
 
+## Jittor(JRender) Version
+Since Jittor doesn't provide method such as multi object rendering, we only provide a core implementation and a single object translation demo in submodule jittor.  Please install jittor follow jittor/readme.md.
