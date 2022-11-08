@@ -82,8 +82,9 @@ Because the face model are not free for public, we do not provide the model and 
 
 
 ## Jittor(JRender) Version
-Since Jitter(JRender) doesn't support methods such as multi object rendering, we only provide a core implementation and a single object translation demo in submodule `jittor`.  Please install jittor follow jittor/readme.md and then run demo file by the following command.
+Since Jitter(JRender) doesn't support methods such as multi object rendering, we only provide a core implementation and a single object translation demo in submodule `DROT-JRender`.  Please install jittor follow jittor/readme.md and then run demo file by the following command.
 
 ```
+cd DROT-JRender
 python demo-drl.py
 ```
